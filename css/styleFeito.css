@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(50,50,50);
+}
+
+section.container{
+	width: 80%;
+	height: 100%;
+	background-color: rgba(50,50,50);
+}
+
+a{
+	text-decoration: none;
+}
+
+.logo{
+	position: relative;
+	width: 490px;
+	margin: 100px auto;
+	cursor: pointer;
+}
+
+.logo img{
+	position: relative;
+	float: left;
+	width: 80px;
+}
+
+.logo h1{
+	position: relative;
+	font-size: 30px;
+	color: white;
+	font-family: 'Metal Mania', cursive;
+	left: 30px;
+	padding-top: 20px;
+}
+
+.mensagem{
+	width: 90%;
+	margin: 0px auto;
+}
+
+.mensagem img{
+	position: relative;
+	float: left;
+	width: 80px;
+}
+
+.mensagem h2{
+	position: relative;
+	font-size:35px;
+	color: #32cd32;
+	font-family: 'Arial', cursive;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.btn1{
+	opacity: 1;
+	margin: 100px auto;
+	text-align: center;
+	display: block;
+}
+
+@media screen and (max-width: 650px){
+
+	.logo {
+		width: 90%;
+		margin: 100px 5%;
+	}
+
+	.logo h1{
+		font-size: 18px;
+	}
+
+	.mensagem h2{
+		font-size: 20px;
+	}
+
+}

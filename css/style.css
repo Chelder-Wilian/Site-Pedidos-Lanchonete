@@ -1,0 +1,1143 @@
+
+/* SETAR CONFIG PAGRÃO*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*/////////////////////////////*/
+
+
+
+/*CLASSE PARA LIMPAR FLUTUACÇÕES*/
+.clear{
+	clear: both;
+}
+/*///////////////////////////////*/
+
+
+.container{
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+/*////////ENVOLVE TODO O  BODY//////*/
+section.superContainer{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.superCase1{
+	position: relative;
+	display: block;
+	width: 70%;
+	height: 100%;
+}
+/*////////////////////////*/
+
+
+
+/*/////////HEADER///////////*/
+header{
+	z-index: 999;
+	position: fixed;
+	padding: 20px 2%;
+	width: 100%;
+	height: 100px;
+	border-bottom: 2px solid white;
+	text-align: center;
+	background-color: black;
+}
+
+header nav ul li a{
+	font-size: 20px;
+	color: #B4B4B4;
+}
+
+header .logo{
+	width: 400px;
+	cursor: pointer;
+}
+
+header .logo a{
+	text-decoration: none;
+}
+
+header .logo img{
+	margin-top: -10px;
+	margin-right: 10px;
+	float: left;
+	width: 80px;
+}
+
+header .logo h1{
+	font-size: 25px;
+	color: white;
+	font-family: 'Metal Mania', cursive;
+	margin-left: 10%;
+	padding-top: 20px;
+}
+
+header nav.menu-desktop{
+	float: right;
+	margin-top: -30px;
+	width: 550px;
+	text-align: center;
+}
+
+header nav.menu-desktop ul{
+	list-style-type: none;
+	position: relative;
+	margin: 0 auto;
+}
+
+header nav.menu-desktop ul li{
+	font-size: 22px;
+	float: left;
+	text-transform: uppercase;
+	padding: 0 10px;
+	color: gray;
+}
+
+header nav.menu-desktop ul li:hover{
+	color: white;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+header nav.menu-mobile{
+	display: none;
+	float: right;
+	cursor: pointer;
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-top: -30px;
+	background-image: url('../imagens/menu.png');
+	background-size: 100% 100%;
+}
+
+header nav.menu-mobile ul{
+	z-index: 999;
+	position: absolute;
+	background-color: rgba(53,56,57,1);
+	width: 100%;
+	left: 0;
+	top: 75px;
+	list-style-type: none;
+	text-align: center;
+}
+
+header nav.menu-mobile ul li:hover{
+	background-color: rgba(0,0,0,.5);
+	text-decoration: underline;
+}
+
+header nav.menu-mobile ul li{
+	padding: 3% 0;
+	color: #B4B4B4;
+}
+
+header nav.menu-mobile ul li a{
+	text-decoration: none;
+}
+
+.liHover{
+	color: gray;
+}
+
+.liHover:hover{
+	color: white;
+}
+/*/////////////////////////////////////////*/
+
+
+/*//////////////////PEDIDOS/////////////////*/
+div.pedidos{
+	display: none;
+	position: fixed;
+	float: right;
+	z-index: 99;
+	height: 100%;
+	background-color: #5E2129;
+	color: white;
+	padding-top: 120px;
+	text-align: center;
+}
+
+div.pedidosLado1{
+	float: left;
+	text-align: center;
+}
+
+div.pedidosLado2{
+	float: right;
+	text-align: center;
+}
+
+div.pedidos h2{
+	text-align: center;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+div.pedidos p{
+	font-size: 23px;
+}
+
+#valorTotal, .valorTotal{
+	font-size: 28px;
+	margin: 20px 10px;
+}
+
+div.itens{
+	width: 85%;
+	height: 300px;
+	white-space: nowrap;
+  	overflow-y: auto;
+  	text-overflow: Ellipsis;
+	margin: 10px auto;
+	background-color: #5E2129;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+div.itens p{
+	margin-top: 10px;
+	width: 100%;
+	line-height: 40px;
+}
+
+div.wraperItem{
+	display: flex;
+	font-size: 18px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+div.itens div.qtdItem{
+	width: 10%;
+	text-align: left;
+}
+
+div.itens div.nomeItem{
+	width: 55%;
+	text-align: left;
+}
+
+div.itens div.precoItem {
+	width: 25%;
+	text-align: left;
+}
+
+div.itens .excluir{
+	width: 18px;
+	height: 18px;
+	background-color: white;
+	color: red;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 9px;
+	padding: 0 auto;
+	font-size: 14px;
+	border: 1px solid red;
+}
+/*/////////////////////////*/
+
+
+/*/////////////BANNER////////////*/
+section.banner{
+	width: 100%;
+	height: calc(100vh - 100px);
+	margin-top: 100px;
+	max-height: 800px;
+	min-height: 500px;
+	background-image: url('../imagens/banner1.jpg');
+	background-size: 100% 100%;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.text-banner{
+	padding: 100px;
+	width: 50%;
+	float: right;
+}
+
+.text-banner-single{
+	display: none;
+	float: right;
+	padding-top: 12px;
+	width: 400px;
+	height: 60px;
+	margin-top: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	color:yellow;
+	text-align: center;
+	background-image: url('../imagens/fundo.jpg');
+	opacity: 0.8;
+	border: 5px yellow solid;
+	border-radius: 30px;
+	margin-right: -30px;
+}
+
+.text-banner-single:nth-of-type(2){
+	margin-right: 20px;
+}
+
+.text-banner-single:nth-of-type(3){
+	margin-right: 70px;
+}
+
+.text-banner-single:nth-of-type(4){
+	margin-right: 120px;
+}
+/*////////////////////////////////////////*/
+
+
+
+/*/////////////SLIDES///////////////*/
+section.slides{
+	width: 100%;
+	height: 600px;
+	min-height: 300px;
+	text-align: center;
+	background-color: rgba(0,0,0,.8);
+	padding-top: 4%;
+	padding-bottom: 4%;
+	text-align: center;
+}
+
+div.tela{
+	position: relative;
+	width: 75%;
+	height: 500px;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	border: 5px solid yellow;
+}
+
+div.tela img{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.slide1{
+	background-image: url('../imagens/slide1.png');
+}
+
+.slide2{
+	background-image: url('../imagens/slide4.jpg');
+}
+
+.slide3{
+	background-image: url('../imagens/slide2.jpeg');
+}
+
+.slide4{
+	background-image: url('../imagens/slide2.jpg');
+}
+
+.slide5{
+	background-image: url('../imagens/slide5.jpeg');
+}
+
+.slides-bullets{
+	display: inline-block;
+	position: relative;
+	top:-40px;
+	opacity: 0.7;
+}
+
+.slides-bullets:hover{
+	opacity: 1;
+}
+
+.slides-bullets div{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+	background-color: white;
+	border: solid 2px yellow/*rgb(200,200,200);*/;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+div.setas{
+	width: 100%;
+	display: block;
+	position: relative;
+	top: -300px;
+}
+
+div.setas .seta-direita{
+	cursor: pointer;
+	float: right;
+	width: 70px;
+	margin-right: 10%;
+	height: 70px;
+	background-color: white;
+	background-image: url('../imagens/setaright.png');
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 35px;
+	border: 2px yellow solid;
+	transform: rotateY(180deg);
+}
+
+div.setas .seta-esquerda{
+	cursor: pointer;
+	float: left;
+	width: 70px;
+	margin-left: 10%;
+	height: 70px;
+	background-color: white;
+	background-image: url('../imagens/setaright.png');
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border-radius: 35px;
+	border: 2px yellow solid;
+}
+
+div.setas .seta-direita:hover,div.setas .seta-esquerda:hover{
+	border:10px solid yellow;
+	/*background-color: lightgray;*/
+}
+/*////////////////////////////////////////////////////////////////*/
+
+
+/*///////////////CARDAPIO//////////////////////////////////*/
+section.cardapio{
+	position: relative;
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 90px 2%;
+	background-color: black;
+}
+
+section .line-titulo{
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: -10px;
+	position: relative;
+	text-align: center;
+}
+
+section.cardapio .line1{
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background-color: white;
+	top: 15px;
+}
+
+section.cardapio .line-titulo h2{
+	color: white;
+	display: inline-block;
+	position: relative;
+	background-color: black;
+	text-align: center;
+	font-size: 27px;
+	font-style: italic;
+	padding: 0 20px;
+}
+
+
+div.produto{
+	display: block;
+	float: left;
+	position: relative;
+	margin-top: 20px;
+	height: 450px;
+	border: solid 3px yellow;
+	border-radius: 30px;
+	text-align: center;
+	background-image: url('../imagens/black.jpeg');
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+div.produtoBase{
+	margin: 2%;
+	width: calc(88% / 3);
+}
+
+div.produtoBase1{
+	margin: 5%;
+	width: calc(80% / 2);
+}
+
+div.produto .detalhes{
+	display: none;
+	z-index: 90;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(0,0,0,.9);
+	padding-top: 20px;
+}
+
+div.produto .detalhes p{
+	font-size: 24px;
+	color: yellow;
+	text-align: center; 
+	display: block;
+}
+
+div.produto .img-produto{
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	height: 65%;
+}
+
+div.produto .img-produto img{
+	width: 85%;
+	height: 300px;
+}
+
+div.produto h3{
+	font-size: 35px;
+	font-weight: bold;
+}
+
+div.produto h4{
+	font-size: 45px;
+	font-weight: bold;
+}
+
+div.adicionar{
+	margin-top: 10px;
+	width: 60%;
+	margin-left: 20%;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;   
+}
+
+div.produto .adicionar input[type=number] {
+	width: 60px;
+	height: 40px;
+	font-size: 30px;
+	padding-left: 15px;
+	margin-right: 10px;
+	background-color: rgba(255,255,255,.1);
+	border: 0;
+	-moz-appearance: textfield;
+    appearance: textfield;
+    color: white;
+}
+
+div.produto .adicionar input[type=submit] {
+	cursor: pointer;
+	width: 50px;
+	height: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: white;
+	background-color: green;
+	border: 0;
+}
+/*/////////////////////////////////////////////////////////*/
+
+
+/*/////////////////DEPOIMENTOS/////////////////////////////*/
+section.depoimentos{
+	background-color: black;
+	width: 100%;
+	padding: 60px 2%;
+	padding-top: 40px;
+	text-align: center;
+}
+
+section.depoimentos .line-titulo h2{
+	color: gray;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.depoimento-single{
+	margin: 0 auto;
+	margin-top: 30px;
+	display: block;
+	width: 60%;
+}
+
+.depoimento-single > quote{
+	font-size: 20px;
+	color: gray;
+	display: block;
+	text-align: center;
+}
+
+.depoimento-single .nome-depoimento{
+	padding: 10px 0;
+	text-align: center;
+}
+
+#imgDp{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+
+.nome-depoimento span{
+	position: relative;
+	top: 10px;
+	font-size: 25px;
+	color: gray;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.bullets-comentarios{
+	display: inline-block;
+	position: relative;
+	opacity: 0.7;
+}
+
+.bullets-comentarios:hover{
+	opacity: 1;
+}
+
+.bullets-comentarios div{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+	background-color: rgba(0,0,0,.5);
+	border: solid 1px rgb(200,200,200);;
+	margin-right: 8px;
+	cursor: pointer;
+}
+/*//////////////////////////////////////////////////*/
+
+
+
+/*/////////////CONTATO/////////////////////*/
+section.contato{
+	width: 100%;
+	padding: 60px 2%;
+	padding-bottom: 20px;
+	background-color: rgb(50,50,50);
+}
+
+section.contato .line1{
+	clear: both;
+	position: relative;
+	height: 2px;
+	width: 100%;
+	background-color: white;
+	top: 15px;
+}
+
+section.contato .line-titulo h2{
+	color: white;
+	display: inline-block;
+	position: relative;
+	background-color: rgb(50,50,50);
+	text-align: center;
+	font-size: 27px;
+	font-style: italic;
+	padding: 0 20px;
+}
+
+section.contato form{
+	width: 430px;
+	margin: 15px auto;
+}
+
+.form-wraper span{
+	font-size: 15px;
+	color: white;
+	margin: 17px 0px;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	height: 35px;
+	padding-left: 9px;
+	line-height: 35px;
+	border: 1px solid white;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+.form-wraper textarea{
+	width: 430px;
+	height: 121px;
+	margin-top: 8px;
+	padding: 8px;
+	border: 1px solid white;
+	resize: none;
+}
+
+form .form-wraper input[type=submit]{
+	text-align: center;
+	display: inline-block;
+}
+
+.btn1{
+	background-color: yellow;
+	border-bottom: solid 4px #b21e1e;
+	text-decoration: none;
+	margin-top: 10px;
+	cursor: pointer;
+	color: black;
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: bold;
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	opacity: 0.4;
+}
+/*///////////////////////////////////////////////*/
+
+
+
+/*///////////////DADOS PEDIDO/////////////////////////*/
+div.dados {
+	width: 100%;
+	text-align: center;
+}
+
+div.dados .formDados{
+	width: 80%;
+	height: 100%;
+	margin: 20px auto;
+	display: block;
+	bottom: 50px;
+}
+
+div.dados span{
+	font-size: 22px;
+	text-align: center;
+}
+
+div.dados .form-wrap{
+	width: 100%;
+	display: block;
+}
+
+div.dados .form-wrap input[type=text]{
+	width: 90%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+form select{
+	width: 90%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+div.pedidosLado1 .form-wrap{
+	width: 100%;
+}
+
+div.pedidosLado1 .form-wrap span{
+	font-size: 20px;
+	width: 60%;
+	text-align: left;
+}
+
+div.pedidosLado1 select{
+	width: 40%;
+	height: 30px;
+	margin-bottom: 10px;
+}
+/*//////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////FOOTER//////////////////*/
+footer{
+	width: 100%;
+	padding: 2%;
+	background-color: rgba(0,0,0,.8);
+	text-align: center;
+}
+
+footer h5{
+	text-align: center;
+	color: gray;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+footer p{
+	color: gray;
+	font-size: 20px;
+	text-align: center;
+	margin: 20px 10px; 
+}
+
+footer p a{
+	color: gray;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+footer p a:hover{
+	text-decoration: underline;
+}
+/*//////////////////////////////////////////*/
+
+
+
+/*//////////CASOS PARA A SECÇÃO 'PEDIDOS'/////////////*/
+.pedidosCase{
+	width: 30%;
+	margin-left: 70%;
+}
+
+.pedidosLado1Case{
+	display: block;
+	float: left;
+	width: 100%;
+
+}
+
+.pedidosLado2Case{
+	display: none;
+	width: 50%;
+}
+
+.pedidosCase1{
+	width: 100%;
+	margin-left: 0;
+}
+
+.pedidosLado2Case1{
+	width: 100%;
+	display: none;
+}
+
+.pedidosLado1Case2{
+	width: 50%;
+	border-right: 2px solid white;
+}
+
+.pedidosLado2Case2{
+	width: 50%;
+	display: block;
+}
+
+.pedidosLado1Case1{
+	text-align: center;
+	display: block;
+}
+
+.botaoContinuarCase2{
+	display: none;
+}
+
+.piscar {
+	background-color: #5E2129;
+}
+
+.bola{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: red;
+	left: -5px;
+	top: -5px;
+}
+/*//////////////////////////////////////*/
+
+
+
+@media screen and (max-width: 1010px){
+
+	header .logo{
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	header .logo img{
+		display: block;
+		width: 55px;
+		margin-left: 0%;
+	}
+
+	header .logo h1{
+		font-size: 25px;
+		color: white;
+		font-family: 'Metal Mania', cursive;
+		margin-left: 0;
+		padding-top: 0px
+	}
+
+	header nav.menu-desktop{
+		float: none;
+		width: 550px;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+
+	.text-banner-single:nth-of-type(1),	.text-banner-single:nth-of-type(2),
+	.text-banner-single:nth-of-type(3),.text-banner-single:nth-of-type(4){
+		margin-right: -50px;
+	}
+
+	section.banner{
+		width: 100%;
+		height: 100%;
+		background-size: 1010px 100%;
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		float: left;
+	}
+
+	div.tela{
+		position: relative;
+		width: 90%;
+		height: 500px;
+		margin: 0 auto;
+	}
+
+	div.setas{
+		width: 100%;
+		display: block;
+		position: relative;
+		top: -275px;
+	}
+
+	div.setas .seta-esquerda{
+		margin-left: 2%;
+	}
+
+	div.setas .seta-direita{
+		margin-right: 2%;
+	}
+
+	div.produto{
+		display: inline-block;
+		float: left;
+		position: relative;
+		margin-top: 20px;
+		height: 450px;
+	}
+
+	.superCase1{
+		position: relative;
+		display: block;
+		width: 60%;
+		height: 100%;
+	}
+
+	.pedidosCase{
+		text-align: center;
+		width: 40%;
+		margin-left: 60%;
+		padding-top: 120px;
+	}
+
+	.pedidosLado1Case1{
+		display: block;
+		text-align: center;
+	}
+
+	.pedidosLado2Case1{
+		display: none;
+		text-align: center;
+	}
+
+	.pedidosLado2Case2{
+		display: block;
+	}
+
+	div.produtoBase{
+		margin: 3%;
+		width: calc(88% / 2);
+	}
+
+	div.produtoBase1{
+		margin: 15%;
+		margin-top: 20px;
+		width: 70% ;
+	}
+
+	.depoimento-single{
+		margin: 0 auto;
+		margin-top: 30px;
+		display: block;
+		width: 70%;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+
+	header{
+		height: 80px;
+	}
+
+	header .logo{
+		text-align: center;
+		margin: auto 0 ;
+	}
+
+	header nav.menu-desktop{
+		display: none;
+	}
+
+	header nav.menu-mobile{
+		display: block;
+	}
+
+	header nav.menu-mobile ul{
+		display: none;
+	}
+
+	div.pedidos{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.pedidosLado1{
+		display: block;
+		width: 100%;
+		border: 0;
+	}
+
+	.pedidosLado1Case1{
+		display: none;
+	}
+
+	.pedidosLado2{
+		display: none;
+		width: 100%;
+	}
+
+	.pedidosLado2Case1{
+		display: block;
+	}
+
+
+	.botaoContinuar{
+		display: block;
+		margin: 0 auto;
+	}
+
+	section.banner{
+		height: 100vh ;
+		margin-top: 80px;
+		text-align: center;
+		background-position: left;
+		background-size: 800px 100%;
+	}
+
+	.text-banner{
+		position: relative;
+		padding: 50px;
+		padding-top: 100px;
+		width: 100%;
+		margin: 0 auto;
+		float: left;
+	}
+
+	.text-banner-single{
+		width: 100%;
+		margin: 0 auto;
+		color: yellow;
+	}
+
+	.text-banner-single:nth-of-type(1),	.text-banner-single:nth-of-type(2),
+	.text-banner-single:nth-of-type(3),.text-banner-single:nth-of-type(4){
+		margin: 30px auto;
+		float: none;
+	}
+	
+	div.tela{
+		position: relative;
+		width: 90%;
+		/*padding-top: 25%;*/
+		height: 400px;
+		margin: 0 auto;
+		top: 70px;
+	}
+
+	div.setas{
+		width: 100%;
+		display: block;
+		position: relative;
+		top: -180px;
+	}
+
+	div.setas .seta-esquerda, div.setas .seta-direita{
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+
+	div.setas .seta-esquerda{
+		margin-left: 1%;
+	}
+
+	div.setas .seta-direita{
+		margin-right: 1%;
+	}
+
+	.slides-bullets{
+		top: 20px;
+	}
+
+	div.produto{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	section.contato form{
+		width: 380px;
+		margin: 15px auto;
+	}
+
+	.form-wraper textarea{
+		width: 380px;
+		height: 121px;
+		margin-top: 8px;
+		padding: 8px;
+		border: 1px solid white;
+		resize: none;
+	}	
+
+	header .logo h1{
+		position: relative;
+		color: white;
+		font-size: 22px;
+		font-family: 'Metal Mania', cursive;
+		left:-35px;
+		padding-top: 5px;
+	}
+}

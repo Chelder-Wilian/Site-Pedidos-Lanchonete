@@ -1,0 +1,458 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>LOUKURA LANCHES</title>
+	<link rel="icon" type="image/jpg" href="imagens/logo.ico" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+</head>
+
+<body>
+
+<!--HEADER-MENU-CABEÇALHO-LOGO-->
+	<header >
+		<div class="container sessao" target='Home'>
+		<div class="logo">
+			<a href="index.html"><img src="imagens/logo.png">
+			<h1>L O U K U R A - L A N C H E S</h1></a>
+		</div><!--logo-->
+
+		<nav class="menu-desktop" style="margin-bottom: 30px">
+			<ul>
+				<li class="liColor liHome">HOME</li>
+				<li id="cardapio" class="liColor liCardapio">CARDÁPIO</li>
+				<li class="liColor liContatos">CONTATOS</li>
+				<li class="liPedidos" id="fechado">MEU PEDIDO</li>
+			</ul>
+		</nav><!--menu-desktop-->
+
+		<nav class="menu-mobile">
+			<div id="marcarMenu"></div>
+			<ul id="mobile">
+				<li class="liColor liHome">HOME</li>
+				<li class="liColor liCardapio">CARDÁPIO</li>
+				<li class="liColor liContatos">CONTATOS</li>
+				<li class="liPedidos" id="fechado">MEU PEDIDO</li>
+			</ul>
+		</nav><!--menu-mobile-->
+		<div class="clear"></div><!--clear-->
+		</div><!--container-->
+	</header>
+<!--END HEADER-MENU-CABEÇALHO-LOGO-->
+
+
+<!--ORDERNS-PEDIDOS-SIDE1 AND SIDE2-->
+	<div class="pedidos" id="fechado">
+		<div class="pedidosLado1">
+			<h2>MEUS ITENS</h2>
+			<div class="itens" id="addItens">
+				
+			</div><!--itens-->
+			<div class="form-wrap">
+						<span>Pagamento:</span>
+						<select>
+							<option value="" disabled selected>-Método de Pagamento-</option>
+							<option>Dinheiro</option>
+							<option>PicPay</option>
+							<option>Cartão Débito/Crédito</option>
+						</select>							
+					</div><!--form-wraper-->
+			<div class="valorTotal">Total: R$ <span id="valorTotal"></span></div>
+			<input type="submit" name="continuar" value="CONTINUAR" class="btn1 botaoContinuar">
+		</div><!--pedidosLado1-->
+
+
+		<div class="pedidosLado2">
+			<h2>DADOS PARA ENTREGA</h2>
+			<div class="dados">
+				<form class="formDados" action="html/pedidoRealizado.html" method="post" >
+					<div class="form-wrap">
+						<span>Nome:</span>
+						<input type="text" name="nome"  required>
+					</div><!--form-wraper-w100-->
+					<div class="form-wrap">
+						<span>Telefone:</span>
+						<input type="text" name="telefone" required>
+					</div><!--form-wraper-w100-->
+
+					<div class="form-wrap">
+						<span>Cidade:</span>
+						<select> 
+							<option value="" disabled selected>-Selecionar Cidade-</option>
+							<option>Ibiporã</option>
+						</select>							
+					</div><!--form-wraper-->
+
+					<div class="form-wrap">
+						<span>Bairro:</span>
+						<select>
+							<option value="" disabled selected>-Selecionar Bairro-</option>
+							<option>Centro</option>
+							<option>San Rafael</option>
+							<option>Terra Bonita</option>
+							<option>Santa Paula</option>
+							<option>Jd Kennedy</option>
+							<option>Jd Beltrão</option>
+						</select>							
+					</div><!--form-wraper-->
+
+					<div class="form-wrap">
+						<span>Endereço:</span>
+						<input type="text" name="endereco" required>							
+					</div><!--form-wraper-->
+
+					<div class="clear"></div> 
+					<input type="submit" name="finalizar" value="FINALIZAR" class="btn1 botaoFinalizar">
+				</form><!--formDados-->
+
+			</div><!--dados-->
+			
+		</div><!--pedidosLado2-->
+	</div><!--pedidos-->
+	<div class="clear"></div>
+<!--END ORDERNS-PEDIDOS-SIDE1 AND SIDE2-->
+
+
+<!--BODY-BANNER-SLIDES-PRODUCTS-COMMENTS-CONTACT-FOOTER-->
+
+	<section class="superContainer" id="idBody">
+
+<!--BANNER-->
+		<section class="banner sessao" target='Home'>
+			<div class="container">
+				<div class="text-banner">
+					<div class="text-banner-single" id="placa1">PROMOÇÕES</div>
+					<div class="text-banner-single" id="placa2">ENTREGA GRÁTIS*</div>
+					<div class="text-banner-single" id="placa3">ACEITAMOS PICPAY</div>
+					<div class="text-banner-single" id="placa4">(43) 98459-9694</div>
+				</div><!--text-banner-->
+				<div class="clear"></div>
+			</div><!--container-->
+		</section><!--banner-->
+		<div class="clear"></div>
+<!--END BANNER-->
+
+
+<!--SLIDES-->
+		<section class="slides sessao" target='Home'>
+			<div class="tela s1lide1">
+				<img src="imagens/slide1.png">
+				<img src="imagens/slide4.jpg">
+				<img src="imagens/slide2.jpeg">
+				<img src="imagens/slide2.jpg">
+				<img src="imagens/slide5.jpeg">
+			</div><!--tela-->	
+			<div class="slides-bullets">
+				<div class="ball" style="background-color: rgb(50,50,50)"></div>	
+				<div class="ball"></div>	
+				<div class="ball"></div>		
+				<div class="ball"></div>	
+				<div class="ball"></div>
+			</div><!--slider-buillets-->
+			<div class="setas">
+				<div class="seta-esquerda"></div>
+				<div class="seta-direita"></div>
+			</div><!--setas-->
+		</section><!--slides-->
+<!--END SLIDES-->
+
+
+<!--CARDAPIO-PRODUCTS-->
+		<section class="cardapio sessao" target="Cardapio">
+			<div class="line-titulo">
+				<div class="line1"></div>
+				<h2>CARDÁPIO</h2>
+			</div><!--line-titulo-->
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Pão<br>Maionese<br>Katchup<br>Molho Verde<br>Salchicha<br>Milho<br>
+					Bacon<br>Tomate<br>Calabresa<br>Batata Palha<br>Alface</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/dogsimples.png" class="prod" name="0">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>Dog Simples</h3>
+					<h4>R$<span>7,00</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="0" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Pão<br>Maionese<br>Katchup<br>Molho Verde<br>Presunto<br>Queijo<br>
+					Hambúrguer<br>Tomate<br>Milho<br>Alface</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/dogmedio.png" class="prod" name="1">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>X Salada</h3>
+					<h4>R$<span>9,00</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="1" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Pão Especial<br>Maionese<br>Katchup<br>Molho Verde<br>2 Salchicha<br>
+					Bacon<br>Calabresa<br>Hambúrguer<br>Ovo<br>Presunto<br>Queijo<br>Milho<br>
+					Tomate<br>Batata Palha<br>Alface</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/doggrande.png" class="prod" name="2">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>X Loukura</h3>
+					<h4>R$<span>14,00</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="2" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Dog Simples</p><p>+</p><p>Porção de Batata</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/combo2.png" class="prod" name="3">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>Combo Simples</h3>
+					<h4>R$<span>12,00</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="3" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>X Salada</p><p>+</p><p>Porção de Batata</p><p>+</p><p>Coca Lata 350ml</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/combo1.png" style="height: 98%; margin-top: 2%" class="prod" name="4">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>Combo Multi</h3>
+					<h4>R$<span>15,00</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="4" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Pão Especial<br>2x Maionese<br>2x Katchup<br>2x Molho Verde<br>4x Salchicha<br>
+					2x Bacon<br>2x Calabresa<br>2x Hambúrguer<br>2x Ovo<br>2x Presunto<br>2x Queijo<br>2x Milho<br>
+					2x Tomate<br>2x Batata Palha<br>2x Alface</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/duplo.png" style="height: 96%; margin-top: 2%" class="prod" name="5">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>Duplo Loukura</h3>
+					<h4>R$<span>20,00</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="5" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Suco Prats</p><p>Laranja</p><p>1 Litro</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/suco.png" class="prod" name="6">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>Suco Prats 1L</h3>
+					<h4>R$<span>6,00</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="6" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Refrigerante</p><p>Coca Cola</p><p>Lata 350ml</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/cocalata.png" class="prod" name="7">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>Coca Cola 350ml</h3>
+					<h4>R$<span>3,50</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="7" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+
+			<div class="produto">
+				<div class="detalhes">
+					<p>Refrigerante</p><p>Guaraná Antártica</p><p>Lata 350ml</p>
+				</div>
+				<div class="img-produto">
+					<img src="imagens/guarana.webp" style="height: 96%; margin-top: 4%" class="prod" name="8">
+				</div><!--img-produto-->
+				<div class="descricao-produto">
+					<h3>Guaraná 350ml</h3>
+					<h4>R$<span>3,50</span></h4>
+				</div><!--descricao-produto-->
+				<div class="adicionar">
+					<input type="number" min="1" max="10" class="qtd"><input onclick="addItem(this)" id="8" type="submit" name="add" value="+">
+				</div><!--adicionar-->
+			</div><!--produto-->
+			<div class="clear"></div>
+		</section><!--cardapio-->
+<!--END CARDAPIO-PRODUCTS-->
+
+
+<!--CONTACT-->
+		<section class="contato sessao" target='Contatos'>
+			<div class="line-titulo">
+				<div class="line1"></div>
+				<h2>FALE CONOSCO</h2>
+			</div><!--line-titulo-->
+
+			<form>
+				<div class="container">
+					<div class="form-wraper">
+						<span>Nome:</span>
+						<input type="text" name="nome" placeholder="Exemplo: João Carlos" required>
+					</div><!--form-wraper-w100-->
+
+					<div class="form-wraper">
+						<span>E-mail:</span>
+						<input type="text" name="email" required placeholder="exemplo@gmail.com">
+					</div><!--form-wraper-w100-->
+
+					<div class="form-wraper">
+						<span>Telefone:</span>
+						<input type="text" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+					</div><!--form-wraper-w100-->
+
+					<div class="form-wraper">
+						<span>Mensagem:</span>
+						<textarea required placeholder="Escreva sua Mensagem aqui..."></textarea>
+					</div><!--form-wraper-w100-->
+
+					<div class="form-wraper" style="text-align: center;">
+						<input style="opacity: 1" class="btn1" type="submit" name="enviar" value="ENVIAR">
+					</div><!--form-wraper-w100-->
+					<div class="clear"></div> 
+				</div><!--container-->
+			</form>
+		</section><!--contato-->
+<!--END CONTACT-->
+
+<!--COMMENTS-->
+		<section class="depoimentos sessao" target='Contatos'>
+			<div class="line-titulo">
+				<h2>DEPOIMENTOS</h2>
+			</div><!--line-titulo-->
+			<div class="mostrar-comentarios">
+				<div class="depoimento-single">
+					<quote>
+						"Quero aproveitar a mensagem para agradecer pela qualidade e pontualidade da entrega de vocês. O lanche estava ótimo, o suco geladinho, o bolo ótimo! Mais uma vez, muito obrigada pela parceria."
+					</quote>	
+					<div class="nome-depoimento">
+						<img id="imgDp" src="imagens/dp1.jpg">
+						<span>Maria Augusta</span>
+					</div><!--nome-depoimento-->
+				</div><!--depoimento-single-->
+
+				<div class="depoimento-single"> 
+					<quote>
+						"A propósito, acabei me esquecendo de comentar, mas o serviço foi ótimo, estava tudo muito gostoso, e a equipe também nos atendeu super bem. Obrigada!"
+					</quote>	
+					<div class="nome-depoimento">
+						<img id="imgDp" src="imagens/img2.jpg">
+						<span>Pamela Oliveira</span>
+					</div><!--nome-depoimento-->
+				</div><!--depoimento-single-->
+
+				<div class="depoimento-single" style="">
+					<quote>
+						"Boa tarde! Foi tudo maravilhoso, os clientes adoraram …..foram muitos  elogios. Obrigado pela pontualidade e qualidade."
+					</quote>	
+					<div class="nome-depoimento">
+						<img id="imgDp" src="imagens/img3.png">
+						<span>Tales Ferreira</span>
+					</div><!--nome-depoimento-->
+				</div><!--depoimento-single-->
+			</div><!--mostrar-comentarios-->
+
+			<div class="mostrar-comentarios" style="display: none">
+				<div class="depoimento-single">
+					<quote>
+						"Seu capricho é sensacional e percebe-se que é apaixonada pelo seu trabalho! Muito sucesso mesmo pra você e sua equipe! Um beijo com carinho."
+					</quote>	
+					<div class="nome-depoimento">
+						<img id="imgDp" src="imagens/img5.jpg">
+						<span>Bruna Machado</span>
+					</div><!--nome-depoimento-->
+				</div><!--depoimento-single-->
+
+
+				<div class="depoimento-single"> 
+					<quote>
+						"Vocês foram demais, desde quem preparou os lanchinhos até as meninas que ficaram aqui e fizeram também uma excelente entrega."
+					</quote>	
+					<div class="nome-depoimento">
+						<img id="imgDp" src="imagens/img6.jpg">
+						<span>Pedro Gustavo</span>
+					</div><!--nome-depoimento-->
+				</div><!--depoimento-single-->
+
+				<div class="depoimento-single">
+					<quote>
+						"De fato ficamos muito felizes com o atendimento e gostaríamos muito que esse agradecimento fosse estendido a sua equipe. todos os benefícios que este trás e temos certeza de que o atendimento prestado é digno de elogios."
+					</quote>	
+					<div class="nome-depoimento">
+						<img id="imgDp" src="imagens/img1.png">
+						<span>Julio Fernandes</span>
+					</div><!--nome-depoimento-->
+				</div><!--depoimento-single-->
+			</div><!--mostrar-comentarios-->
+
+			<div class="bullets-comentarios">
+				<div class="ball-comentarios" style="background-color: lightgray"></div>	
+				<div class="ball-comentarios"></div>
+			</div><!--bullets-comentario-->
+			</div><!--container-->
+		</section><!--depoimentos-->
+<!--END COMMENTS-->
+
+<!--FOOTER-->
+		<footer class="sessao" target='Contatos'> 
+			<h5>HORÁRIO DE ATENDIMENTO</br>DE TERÇA À DOMINGO DAS 19H00 ÀS 00H00</h5>
+			<p><a href="">Facebook</a> | <a href="">Instagran</a> | <a href=""> WhatsApp</a> </p>
+			<p>©‎COPYRIGHT - CW PRODUTION</p>
+		</footer>
+	</section><!--idBody-->
+<!--END FOOTER-->
+
+</body>
+
+</html>
